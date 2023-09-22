@@ -1,0 +1,19 @@
+Get all indexes
+curl -i https://controller.gcp-starter.pinecone.io/databases \
+  -H 'Api-Key: pinecone-api-key'
+
+Status of specific index
+curl -i -X GET "https://controller.gcp-starter.pinecone.io/databases/indexname" \
+-H 'Api-Key: pinecone-api-key'
+
+
+See how many vectors are stored
+curl-i -X GET "https://indexname-projectID.svc.gcp-starter.pinecone.io/describe_index_stats" \
+-H 'Api-Key: pinecone-api-key'
+
+
+Fetch a vector by id
+curl -i -X GET "https://indexname- pinecone-api-key'.svc.gcp-starter.pinecone.io/vectors/fetch?ids=xxx" \
+-H 'Api-Key: pinecone-api-key' 
+-H 'accept: application/json'
+
